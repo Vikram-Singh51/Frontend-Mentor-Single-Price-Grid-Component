@@ -81,6 +81,9 @@ body{
       font-size: 0.9rem;
       font-weight: normal;
  }
+ .text{
+      color: white;
+ }
  button {
       margin-top: 10px;
       padding: 0.9rem 5rem;
