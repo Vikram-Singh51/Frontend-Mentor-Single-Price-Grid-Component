@@ -1,0 +1,127 @@
+
+/*-------------- Color variables-------------------- */
+:root{
+      --h1: hsl(179, 62%, 43%);
+      --btn_color: #b7cd31;
+      --Light_gray: hsl(204, 43%, 93%);
+      --Grayish_blue: hsl(218, 22%, 67%);
+/*---------------font Weight----------------------- */
+      --font_weights: 400;
+      --heavy-font_weight: 700;
+}
+
+
+body{
+      font-family: "Karla"; 
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: var(--Light_gray);
+}
+
+.container{
+    width: 90%;
+    max-width: 600px;
+}
+.card{
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+}
+.header{
+      text-align: left;
+      padding: 20px 30px;
+      border-bottom: 2px solid #ddd;
+}
+.header h1{
+      color: var(--h1);
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+}
+.header .highlight{
+      color: var(--btn_color);
+      font-weight: var(--font_weights);
+      font-size: 1.2rem;
+}
+.header .description{
+      color: var(--Grayish_blue);
+      font-size: 1rem;
+      margin-top: 1rem;
+}
+.lower_card{
+      display: flex;
+      flex-direction: row;
+}
+.column{
+      flex: 1;
+      padding: 1.2rem;
+      text-align: left;
+}
+.column h2{
+      color: white;
+      margin-bottom: 1rem;
+}
+.column:first-child {
+      background-color: var(--h1);
+}
+    
+.column:last-child {
+      background-color: #41c5c5;
+}
+.price {
+      font-size: 2rem;
+      color: #fff;
+      font-weight: bold;
+}
+.price span {
+      font-size: 0.9rem;
+      font-weight: normal;
+ }
+ button {
+      margin-top: 10px;
+      padding: 0.9rem 5rem;
+      font-size: 1rem;
+      color: #fff;
+      background-color: #b7cd31;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+ }
+ .column ul {
+      list-style: none;
+      padding: 0;
+      color: #fff;
+      text-align: left;
+      font-size: 0.9rem;
+}
+
+.column ul li {
+      margin-bottom: 8px;
+}
+
+li{
+      list-style: none;
+}
+
+.attribution{
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-top: 10px;
+      transform: translate(-50%, -50%);
+}
+
+@media (max-width: 480px){
+    
+      .lower_card{
+            display: flex;
+            flex-direction: column;
+      }
+      .attribution{
+            top: 0;
+      }
+}
